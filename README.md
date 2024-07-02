@@ -1,5 +1,5 @@
 <div align="center">
-    <h2>UniQuad: A Unified and Versatile Quadrotor Platform Series for <br/> UAV Research and Application</h2>
+    <h2>UniQuad: A Unified and Versatile Quadrotor Platform Series for **UAV** Research and Application</h2>
     <br>
         <a href="https://yzhangec.github.io/" target="_blank">Yichen Zhang</a><sup>†</sup>,
         <a href="https://uav.hkust.edu.hk/current-members/" target="_blank">Xinyi Chen</a>,
