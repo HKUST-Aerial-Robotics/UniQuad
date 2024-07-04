@@ -68,7 +68,7 @@ The example quadrotor platforms in **UniQuad** series provided in this article, 
     Front and back view of Uni350CL quadrotor platform.
 </div>
 
-1. Uni127C was inspired and adapted to UniQuad framework by the design from <a href="https://arxiv.org/abs/2403.04586" target="_blank"> Learning Agility Adaptation for Flight in Clutter</a>, which is credit to its designer <a href="http://zju-fast.com/neng-pan/" target="_blank">Neng Pan</a>. 
+1. Uni127C was inspired by the 3-inch quadrotor from <a href="https://arxiv.org/abs/2403.04586" target="_blank"> Learning Agility Adaptation for Flight in Clutter</a>, which is credit to its designer <a href="http://zju-fast.com/neng-pan/" target="_blank">Neng Pan</a>. 
 
 ## Useful Links
 <div>
