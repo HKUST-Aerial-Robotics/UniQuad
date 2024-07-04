@@ -92,6 +92,10 @@ The example quadrotor platforms in **UniQuad** series provided in this article, 
         <li>
             Fast-Planner: A Robust and Efficient Trajectory Planner for Quadrotors, 
             <a href="https://github.com/HKUST-Aerial-Robotics/Fast-Planner" target="_blank">https://github.com/HKUST-Aerial-Robotics/Fast-Planner</a>
+        </li>
+        <li>
+            px4ctrl:
+            <a href="https://github.com/ZJU-FAST-Lab/Fast-Drone-250/tree/master/src/realflight_modules/px4ctrl" target="_blank">https://github.com/ZJU-FAST-Lab/Fast-Drone-250/tree/master/src/realflight_modules/px4ctrl</a>
     </ol>
 </div>
 
