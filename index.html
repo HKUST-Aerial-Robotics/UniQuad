@@ -51,9 +51,9 @@
         <div class="container is-max-desktop">
           <div class="columns is-centered">
             <div class="column has-text-centered">
-              <h1 class="title is-1 publication-title">UniQuad</h1>
+              <!-- <h1 class="title is-1 publication-title">UniQuad</h1> -->
               <h1 class="title is-2 publication-title">
-                A Unified and Versatile Quadrotor Platform Series for UAV
+                UniQuad: A Unified and Versatile Quadrotor Platform Series for UAV
                 Research and Application
               </h1>
               <div class="is-size-5 publication-authors">
@@ -105,6 +105,20 @@
 
               <div class="column has-text-centered">
                 <div class="publication-links">
+                  <!-- ArXiv abstract Link -->
+                  <span class="link-block">
+                    <a
+                      href="https://arxiv.org/abs/2407.00578"
+                      target="_blank"
+                      class="external-link button is-normal is-rounded is-dark"
+                    >
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+
                   <!-- Arxiv PDF link -->
                   <span class="link-block">
                     <a
@@ -122,28 +136,14 @@
                   <!-- Github link -->
                   <span class="link-block">
                     <a
-                      href="todo"
+                      href="https://github.com/HKUST-Aerial-Robotics/UniQuad"
                       target="_blank"
                       class="external-link button is-normal is-rounded is-dark"
                     >
                       <span class="icon">
                         <i class="fab fa-github"></i>
                       </span>
-                      <span>Open Source</span>
-                    </a>
-                  </span>
-
-                  <!-- ArXiv abstract Link -->
-                  <span class="link-block">
-                    <a
-                      href="https://arxiv.org/abs/2407.00578"
-                      target="_blank"
-                      class="external-link button is-normal is-rounded is-dark"
-                    >
-                      <span class="icon">
-                        <i class="ai ai-arxiv"></i>
-                      </span>
-                      <span>arXiv</span>
+                      <span>GitHub</span>
                     </a>
                   </span>
                 </div>
@@ -289,7 +289,7 @@
           </table>
           <p style="font-size: 11px">
             <sup>*</sup>All motors are purchased from T-MOTOR (<a
-              href="https://store.tmotor.com/categorys/f-series-motor"
+              href="https://store.tmotor.com/categorys/f-series-motor" target="_blank"
               >https://store.tmotor.com/categorys/f-series-motor</a
             >).
           </p>
@@ -638,23 +638,17 @@
             <a class="panel-tab" onclick="openTabs(event,'cnc' )">CNC</a>
            
           </p>
-          <!-- <a class="panel-block is-active" id="all-in-one.zip" onclick="downloadModel(event)" data-all>
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            all-in-one-package
-          </a> -->
-          <a class="panel-block " id="PCB/HDMI-Type-A-Dummy-Plug.zip" onclick="downloadModel(event)" data-pcb data-all>
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            HDMI-Dummy-plug
-          </a>
           <a class="panel-block" id="PCB/XT-30-Main-Power-Board.zip" onclick="downloadModel(event)" data-pcb data-all>
             <span class="panel-icon">
               <i class="fas fa-book" aria-hidden="true"></i>
             </span>
-            main-power-board-xt30
+            XT-30-Main-Power-Board
+          </a>
+          <a class="panel-block" id="PCB/XT-60-Main-Power-Board.zip" onclick="downloadModel(event)" data-pcb data-all>
+            <span class="panel-icon">
+              <i class="fas fa-book" aria-hidden="true"></i>
+            </span>
+            XT-60-Main-Power-Board
           </a>
           <a class="panel-block" id="PCB/Nanolink-RTL8125B.zip" onclick="downloadModel(event)" data-pcb data-all>
             <span class="panel-icon">
@@ -662,11 +656,11 @@
             </span>
             Nanolink-RTL8125B
           </a>
-          <a class="panel-block" id="PCB/XT-60-Main-Power-Board.zip" onclick="downloadModel(event)" data-pcb data-all>
+          <a class="panel-block " id="PCB/HDMI-Type-A-Dummy-Plug.zip" onclick="downloadModel(event)" data-pcb data-all>
             <span class="panel-icon">
               <i class="fas fa-book" aria-hidden="true"></i>
             </span>
-            main-power-board-xt60
+            HDMI-Type-A-Dummy-Plug
           </a>
           <a class="panel-block" id="CNC/Uni127C_CNC.zip" onclick="downloadModel(event)" data-cnc data-all>
             <span class="panel-icon">
@@ -707,6 +701,54 @@
                   <source src="/UniQuad/assets/icrax40-BZ9uh00D.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="hero teaser">
+      <div class="hero-body is-max-desktop">
+        <div class="container has-text-centered">
+          <h2 class="title is-3">Projects using UniQuad</h2>
+          <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+              <div class="projects-used-uniquad">
+                <div class="projects-used-uniquad-apace">
+                  <h3 class="title is-size-5">APACE: Agile and Perception-Aware Trajectory Generation for Quadrotor Flights</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/FIM3ta6p_d0?si=QB9UtEBBfbXuQcVS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <br>                
+                <div class="projects-used-uniquad-falcon">
+                  <h3 class="title is-size-5">FALCON: Fast Autonomous Aerial Exploration using Coverage Path Guidance</h3>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/BGH5T2kPbWw?si=EzRj74U_P6WgaRKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+    <section class="hero teaser">
+      <div class="hero-body is-max-desktop">
+        <div class="container has-text-centered">
+          <h2 class="title is-3">Acknowledgements</h2>
+          <div class="columns is-centered has-text-left">
+            <div class="column is-four-fifths">
+              <div class="acknowledgements">
+                <ol>
+                  <li>
+                    Nxt-FC: Mini PX4 for UAV Group, 
+                    <a href="https://github.com/HKUST-Aerial-Robotics/Nxt-FC" target="_blank">https://github.com/HKUST-Aerial-Robotics/Nxt-FC</a>
+                  </li>
+                  <li>
+                    ZJU Fast-Drone-250:
+                    <a href="https://github.com/ZJU-FAST-Lab/Fast-Drone-250" target="_blank">https://github.com/ZJU-FAST-Lab/Fast-Drone-250</a>
+                  </li>
+                </ol>
               </div>
             </div>
           </div>
