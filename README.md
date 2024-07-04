@@ -6,10 +6,12 @@
         <a href="https://github.com/Peize-Liu" target="_blank">Peize Liu, </a>,
         <a href="https://github.com/coopjz" target="_blank">Junzhe Wang</a>,
         <a href="https://github.com/JXNCTED" target="_blank">Hetai Zou</a>,
+        <a href="http://zju-fast.com/neng-pan/" target="_blank">Neng Pan</a>,
+        <a href="http://zju-fast.com/fei-gao/" target="_blank">Fei Gao</a>,
         <a href="https://uav.hkust.edu.hk/group/" target="_blank">Shaojie Shen</a>
     <p>
         <h45>
-            HKUST Aerial Robotics Group &nbsp;&nbsp;
+            HKUST Aerial Robotics Group, ZJU FAST Lab
             <br>
         </h5>
         <sup>†</sup>Corresponding Author
@@ -66,7 +68,7 @@ The example quadrotor platforms in **UniQuad** series provided in this article, 
     Front and back view of Uni350CL quadrotor platform.
 </div>
 
-1. Uni127C was inspired and adapted to UniQuad framework by the design from <a href="https://arxiv.org/abs/2403.04586" target="_blank"> Learning Agility Adaptation for Flight in Clutter</a>, which is credit to its designer <a href="http://zju-fast.com/neng-pan/" target="_blank">Neng Pan</a>.
+1. Uni127C was inspired and adapted to UniQuad framework by the design from <a href="https://arxiv.org/abs/2403.04586" target="_blank"> Learning Agility Adaptation for Flight in Clutter</a>, which is credit to its designer <a href="http://zju-fast.com/neng-pan/" target="_blank">Neng Pan</a>. 
 
 ## Useful Links
 <div>
