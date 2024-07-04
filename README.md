@@ -21,7 +21,7 @@
 </div>
 
 ## Updates
-* **02 Jul 2024**: Coming Soon
+* **04 Jul 2024**: Project website published
 * **29 Jun 2024**: Submitted to ICRAX40
 
 ## Collection Photo of UniQuad Series
