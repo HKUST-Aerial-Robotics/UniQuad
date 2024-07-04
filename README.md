@@ -2,8 +2,8 @@
     <h2>UniQuad: A Unified and Versatile Quadrotor Platform Series for UAV Research and Application</h2>
     <br>
         <a href="https://yzhangec.github.io/" target="_blank">Yichen Zhang</a><sup>†</sup>,
-        <a href="https://uav.hkust.edu.hk/current-members/" target="_blank">Xinyi Chen</a>,
-        <a href="https://uav.hkust.edu.hk/current-members/" target="_blank">Peize Liu, </a>,
+        <a href="https://github.com/xchencq" target="_blank">Xinyi Chen</a>,
+        <a href="https://github.com/Peize-Liu" target="_blank">Peize Liu, </a>,
         <a href="https://github.com/coopjz" target="_blank">Junzhe Wang</a>,
         <a href="https://github.com/JXNCTED" target="_blank">Hetai Zou</a>,
         <a href="https://uav.hkust.edu.hk/group/" target="_blank">Shaojie Shen</a>
@@ -21,8 +21,10 @@
 </div>
 
 ## Updates
-* **04 Jul 2024**: Project website published
-* **29 Jun 2024**: Submitted to ICRAX40
+* **04 Jul 2024**: Project website published. All CAD models with online preview and essential components can be downloaded from the website.
+* **29 Jun 2024**: Submitted to ICRA@40
+
+Please kindly star ⭐ this project if it helps you. We take great efforts to develope and maintain it 😁.
 
 ## Collection Photo of UniQuad Series
 <div align="center">
@@ -30,3 +32,79 @@
 </div>
 
 The example quadrotor platforms in **UniQuad** series provided in this article, namely **Uni250L**, **Uni127C**, **Uni350CL** and **Uni250C** from left to right. Note that these four models merely serve as examples of the platform series, which can be further extended and customized on your own choice.
+
+## Detailed Information
+<div align="center">
+    <img src="./img/spec_table.png" width="100%">
+</div>
+
+<div align="center">
+    <img src="./img/Uni127C_front.jpg" width="45%">
+    <img src="./img/Uni127C_back.jpg" width="45%">
+    <br>
+    Front and back view of Uni127C quadrotor platform.
+</div>
+
+<div align="center">
+    <img src="./img/Uni250C_front.jpg" width="45%">
+    <img src="./img/Uni250C_back.jpg" width="45%">
+    <br>
+    Front and back view of Uni250C quadrotor platform.
+</div>
+
+<div align="center">
+    <img src="./img/Uni250L_front.jpg" width="45%">
+    <img src="./img/Uni250L_back.jpg" width="45%">
+    <br>
+    Front and back view of Uni250L quadrotor platform.
+</div>
+
+<div align="center">
+    <img src="./img/Uni350CL_front.jpg" width="45%">
+    <img src="./img/Uni350CL_back.jpg" width="45%">
+    <br>
+    Front and back view of Uni350CL quadrotor platform.
+</div>
+
+## Useful Links
+<div>
+    <ol>
+        <li>
+            realsense-ros: ROS Wrapper for Intel(R) RealSense(TM) Cameras,
+            <a href="https://github.com/IntelRealSense/realsense-ros" target="_blank">https://github.com/IntelRealSense/realsense-ros</a>
+        </li>
+        <li>
+            librealsense: Intel® RealSense™ SDK,
+            <a href="https://github.com/IntelRealSense/librealsense" target="_blank">https://github.com/IntelRealSense/librealsense</a>
+        </li>
+        <li>
+            Livox-SDK,  Livox-SDK2, livox_ros_driver, livox_ros_driver2: 
+            <a href="https://github.com/Livox-SDK" target="_blank">https://github.com/Livox-SDK</a>
+        </li>
+        <li>
+            VINS-Fusion: An optimization-based multi-sensor state estimator, 
+            <a href="https://github.com/HKUST-Aerial-Robotics/VINS-Fusion" target="_blank">https://github.com/HKUST-Aerial-Robotics/VINS-Fusion</a>
+        </li>
+        <li>
+            FAST_LIO: A computationally efficient and robust LiDAR-inertial odometry (LIO) package, 
+            <a href="https://github.com/hku-mars/FAST_LIO" target="_blank">https://github.com/hku-mars/FAST_LIO</a>
+        </li>
+        <li>
+            Fast-Planner: A Robust and Efficient Trajectory Planner for Quadrotors, 
+            <a href="https://github.com/HKUST-Aerial-Robotics/Fast-Planner" target="_blank">https://github.com/HKUST-Aerial-Robotics/Fast-Planner</a>
+    </ol>
+</div>
+
+## Acknowledgements
+<div>
+    <ol>
+        <li>
+            Nxt-FC: Mini PX4 for UAV Group, 
+            <a href="https://github.com/HKUST-Aerial-Robotics/Nxt-FC" target="_blank">https://github.com/HKUST-Aerial-Robotics/Nxt-FC</a>
+        </li>
+        <li>
+            ZJU Fast-Drone-250:
+            <a href="https://github.com/ZJU-FAST-Lab/Fast-Drone-250" target="_blank">https://github.com/ZJU-FAST-Lab/Fast-Drone-250</a>
+        </li>
+    </ol>
+</div>
