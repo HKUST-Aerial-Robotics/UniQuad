@@ -1,805 +1,717 @@
 <!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
-    <!-- Replace the content tag with appropriate information -->
-    <meta
-      name="description"
-      content=" A Unified and Versatile Quadrotor
-              Platform Series for UAV Research and Application"
-    />
 
-    <meta property="og:url" content="URL OF THE WEBSITE" />
-    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
-    <meta property="og:image" content="static/image/your_banner_image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
+<head>
+  <meta charset="utf-8" />
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content=" A Unified and Versatile Quadrotor
+              Platform Series for UAV Research and Application" />
 
-    <!-- Keywords for your paper to be indexed by-->
-    <meta name="keywords" content="Robotics" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
-    <title>UniQuad</title>
-    <link rel="icon" type="image/x-icon" href="/UniQuad/assets/drone--k3lxnBv.ico" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
-      rel="stylesheet"
-    />
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Robotics" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>UniQuad</title>
+  <link rel="icon" type="image/x-icon" href="/UniQuad/assets/drone--k3lxnBv.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
-    />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="/node_modules/bulma-extensions/bulma-pricingtable/dist/bulma-pricingtable.min.js"></script>
-    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-    <script defer src="static/js/fontawesome.all.min.js"></script>
-    <script src="static/js/bulma-carousel.min.js"></script>
-    <script src="static/js/bulma-slider.min.js"></script>
-    <script src="static/js/index.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/node_modules/bulma-extensions/bulma-pricingtable/dist/bulma-pricingtable.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 
-    <script type="module" crossorigin src="/UniQuad/assets/index-hkRuAoeR.js"></script>
-    <link rel="stylesheet" crossorigin href="/UniQuad/assets/index-B-jSPU9-.css">
-  </head>
+  <script type="module" crossorigin src="/UniQuad/assets/index-hkRuAoeR.js"></script>
+  <link rel="stylesheet" crossorigin href="/UniQuad/assets/index-B-jSPU9-.css">
+</head>
 
-  <body>
-    <!-- <div style="background-image: url(&quot;static/images/all_crop.png&quot;)"> -->
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container is-max-desktop">
-          <div class="columns is-centered">
-            <div class="column has-text-centered">
-              <!-- <h1 class="title is-1 publication-title">UniQuad</h1> -->
-              <h1 class="title is-2 publication-title">
-                UniQuad: A Unified and Versatile Quadrotor Platform Series for UAV
-                Research and Application
-              </h1>
-              <div class="is-size-5 publication-authors">
-                <!-- Paper authors -->
-                <span class="author-block">
-                  <a href="https://yzhangec.github.io/" target="_blank"
-                    >Yichen Zhang</a
-                  ><sup>†</sup>,</span
-                >
-                <span class="author-block">
-                  <a href="https://github.com/xchencq" target="_blank"
-                    >Xinyi Chen</a
-                  >,</span
-                >
-                <span class="author-block">
-                  <a href="https://github.com/Peize-Liu" target="_blank"
-                    >Peize Liu</a
-                  >,</span
-                >
-                <span class="author-block">
-                  <a href="https://github.com/coopjz" target="_blank"
-                    >Junzhe Wang</a
-                  >,</span
-                >
-                <span class="author-block">
-                  <a href="https://github.com/JXNCTED" target="_blank"
-                    >Hetai Zou</a
-                  >,</span
-                >
-                <span class="author-block">
-                  <a href="https://uav.hkust.edu.hk/group/" target="_blank"
-                    >Shaojie Shen</a
-                  ></span
-                >
-              </div>
-
-              <div class="is-size-5 publication-authors">
-                <span class="author-block"
-                  >HKUST Aerial Robotics Group<br />
-                  Submitted to IEEE International Conference on Robotics and
-                  Automation @40 (ICRA@40).</span
-                >
-                <span class="eql-cntrb"
-                  ><small
-                    ><br /><sup>†</sup>Indicates Corresponding author</small
-                  ></span
-                >
-              </div>
-
-              <div class="column has-text-centered">
-                <div class="publication-links">
-                  <!-- ArXiv abstract Link -->
-                  <span class="link-block">
-                    <a
-                      href="https://arxiv.org/abs/2407.00578"
-                      target="_blank"
-                      class="external-link button is-normal is-rounded is-dark"
-                    >
-                      <span class="icon">
-                        <i class="ai ai-arxiv"></i>
-                      </span>
-                      <span>arXiv</span>
-                    </a>
-                  </span>
-
-                  <!-- Arxiv PDF link -->
-                  <span class="link-block">
-                    <a
-                      href="static\pdfs\icrax40.pdf"
-                      target="_blank"
-                      class="external-link button is-normal is-rounded is-dark"
-                    >
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Paper</span>
-                    </a>
-                  </span>
-
-                  <!-- Github link -->
-                  <span class="link-block">
-                    <a
-                      href="https://github.com/HKUST-Aerial-Robotics/UniQuad"
-                      target="_blank"
-                      class="external-link button is-normal is-rounded is-dark"
-                    >
-                      <span class="icon">
-                        <i class="fab fa-github"></i>
-                      </span>
-                      <span>GitHub</span>
-                    </a>
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="hero teaser">
-      <div class="container is-max-desktop">
-        <img src="/UniQuad/assets/all_crop-xJDQ5Upg.png" alt="UniQuad" />
-        <h2 class="has-text-centered">
-          The quadrotor platforms in UniQuad series provided in this article,
-          namely Uni250L, Uni127C, Uni350CL and Uni250C from left to right.
-        </h2>
-        <!-- <div class="hero-body">
-      </div> -->
-      </div>
-    </section>
-    <!-- </div> -->
-
-    <!-- Paper abstract -->
-    <section class="section hero is-light">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Abstract</h2>
-            <div class="content has-text-justified">
-              <p>
-                As quadrotors take on an increasingly diverse range of roles,
-                researchers often need to develop new hardware platforms
-                tailored for specific tasks, introducing significant engineering
-                overhead. In this article, we introduce the UniQuad series, a
-                unified and versatile quadrotor hardware platform series that
-                offers high flexibility to adapt to a wide range of common
-                tasks, excellent customizability for advanced demands, and easy
-                maintenance in case of crashes. This project is fully
-                open-source at
-                <a href="https://hkust-aerial-robotics.github.io/UniQuad/">
-                  https://hkust-aerial-robotics.github.io/UniQuad/</a
-                >.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End paper abstract -->
-
-    <section class="section hero">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column is-four-fifths">
-            <h2 class="title is-3">Platform Overview</h2>
-            <div class="content has-text-justified">
-              <img src="/UniQuad/assets/overview-Dgv8VrYq.png" alt="UniQuad overview" />
-              <p>
-                The UniQuad series consists of four quadrotor platforms, namely
-                Uni250L, Uni127C, Uni350CL, and Uni250C. These platforms are
-                designed to cover a wide range of applications, from indoor
-                navigation to outdoor mapping. The UniQuad series is equipped
-                with various sensors, including RTK, Intel RealSense D430, D435,
-                and Livox LiDAR Mid-360, to provide accurate and reliable data
-                for different tasks.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section hero">
+<body>
+  <!-- <div style="background-image: url(&quot;static/images/all_crop.png&quot;)"> -->
+  <section class="hero">
+    <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
-          <h2 class="title is-3">Specification of UniQuad Series</h2>
-        </div>
-        <div class="content has-text-justified">
-          <table class="table">
-            <thead>
-              <tr>
-                <th><abbr title="Model">Model</abbr></th>
-                <th><abbr title="Wheelbase">Wheelbase</abbr></th>
-                <th>
-                  <abbr title="Motor">Motor<sup>*</sup></abbr>
-                </th>
-                <th><abbr title="Propeller">Propeller</abbr></th>
-                <th><abbr title="Weight">Weight</abbr></th>
-                <th><abbr title="Battery Capacity">Battery Capacity</abbr></th>
-                <th><abbr title="Equipped Sensor">Equipped Sensor</abbr></th>
-                <th>
-                  <abbr title="TWR">TWR<sup>**</sup></abbr>
-                </th>
-                <th><abbr title="Flight Duration">Flight Duration</abbr></th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th>UNI-127C</th>
-                <td>127mm</td>
-                <td>F1404 KV3800</td>
-                <td>Gemfan 3016</td>
-                <td>468g</td>
-                <td>4S 3000mAh 30C</td>
-                <td>Intel RealSense D430</td>
-                <td>&cong;2.77</td>
-                <td>7min</td>
-              </tr>
-              <tr>
-                <th>UNI-250C</th>
-                <td>250mm</td>
-                <td>F60PRO KV2550</td>
-                <td>Gemfan 5043</td>
-                <td>848g</td>
-                <td>4S 2200mAh 45C</td>
-                <td>Intel RealSense D435</td>
-                <td>&cong;7.03</td>
-                <td>8.5min</td>
-              </tr>
-              <tr>
-                <th>UNI-250L</th>
-                <td>250mm</td>
-                <td>F60PRO KV1750</td>
-                <td>Gemfan 5043</td>
-                <td>1258g</td>
-                <td>6S 3300mAh 50C</td>
-                <td>Livox LiDAR Mid-360</td>
-                <td>&cong;5.46</td>
-                <td>12min</td>
-              </tr>
-              <tr>
-                <th>UNI-350CL</th>
-                <td>350mm</td>
-                <td>F90 KV1300</td>
-                <td>Sunnysky EOLO8</td>
-                <td>1526g</td>
-                <td>6S 3300mAh 50C</td>
-                <td>D435 & Mid-360</td>
-                <td>&cong;5.54</td>
-                <td>15.5min</td>
-              </tr>
-            </tbody>
-          </table>
-          <p style="font-size: 11px">
-            <sup>*</sup>All motors are purchased from T-MOTOR (<a
-              href="https://store.tmotor.com/categorys/f-series-motor" target="_blank"
-              >https://store.tmotor.com/categorys/f-series-motor</a
-            >).
-          </p>
-          <p style="font-size: 11px">
-            <sup>**</sup>Thrust-to-weight ratio (TWR) is calculated using data
-            obtained from the motor test report available on the T-MOTOR
-            official website.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="section hero is-light">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered">
-          <div class="column">
-            <h2 class="title is-3">Experiment results</h2>
-            <img src="/UniQuad/assets/experiment-CaIWKDf4.png" alt="UniQuad" />
-          </div>
-        </div>
-        <div>
-          <h2 style="font-size: 11px">
-            Experiment results of the trajectory following experiments. The
-            first row shows the composite images of the flight recordings. The
-            second row illustrates the trajectory commands in black curves and
-            the onboard state estimations in green curves. The average tracking
-            errors(m) during the experiments in (x, y, z) axes are indicated in
-            each subcaption respectively.
-          </h2>
-        </div>
-      </div>
-    </section>
+          <div class="column has-text-centered">
+            <!-- <h1 class="title is-1 publication-title">UniQuad</h1> -->
+            <h1 class="title is-2 publication-title">
+              UniQuad: A Unified and Versatile Quadrotor Platform Series for UAV
+              Research and Application
+            </h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://yzhangec.github.io/" target="_blank">Yichen Zhang</a><sup>†</sup>,</span>
+              <span class="author-block">
+                <a href="https://github.com/xchencq" target="_blank">Xinyi Chen</a>,</span>
+              <span class="author-block">
+                <a href="https://github.com/Peize-Liu" target="_blank">Peize Liu</a>,</span>
+              <span class="author-block">
+                <a href="https://github.com/coopjz" target="_blank">Junzhe Wang</a>,</span>
+              <span class="author-block">
+                <a href="https://github.com/JXNCTED" target="_blank">Hetai Zou</a>,</span>
+              <span class="author-block">
+                <a href="http://zju-fast.com/neng-pan/" target="_blank">Neng Pan</a>,</span>
+              <span class="author-block">
+                <a href="http://zju-fast.com/fei-gao/" target="_blank">Fei Gao</a>,</span>
+              <span class="author-block">
+                <a href="https://uav.hkust.edu.hk/group/" target="_blank">Shaojie Shen</a></span>
+            </div>
 
-    <section class="section">
-      <div class="column has-text-centered">
-        <h2 class="title is-3">UniQuad Series Models</h2>
-      </div>
-      <div class="pricing-table is-comparative">
-        <div class="pricing-plan is-features">
-          <div class="plan-header">Features</div>
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                HKUST Aerial Robotics Group, ZJU FAST Lab
+                <br />
+                Submitted to IEEE International Conference on Robotics and Automation @40 (ICRA@40)</span>
+              <span class="eql-cntrb"><small><br /><sup>†</sup>Indicates Corresponding author</small></span>
+            </div>
 
-          <div class="plan-items">
-            <div class="plan-item">Wheelbase</div>
-            <div class="plan-item">Weight</div>
-            <div class="plan-item">TWR</div>
-            <div class="plan-item">Flight Time</div>
-          </div>
-          <div class="plan-footer">
-            <span>3D Model</span>
-          </div>
-        </div>
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2407.00578" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
 
-        <div class="pricing-plan">
-          <div class="plan-header">UNI-127C</div>
-          <div class="plan-items">
-            <div class="plan-item" data-feature="Wheelbase">127mm</div>
-            <div class="plan-item" data-feature="Weight">468g</div>
-            <div class="plan-item" data-feature="TWR">2.77</div>
-            <div class="plan-item" data-feature="Flight Time">7min</div>
-          </div>
-          <div class="plan-footer">
-            <button
-              id="btn1"
-              onclick="btn1Pressed()"
-              class="button is-fullwidth is-light is-primary"
-            >
-              <span class="icon is-small"><i class="fas fa-cube"></i></span>
-              <span>Preview</span>
-            </button>
-          </div>
-          <div class="plan-footer">
-            <!-- <button id="btn11" onclick="downloadModel(0)" class="button is-fullwidth is-light is-primary">
-            <span class="icon is-small"><i class="fas fa-download"></i></span>
-            <span>Download</span>
-          </button> -->
-            <div class="dropdown" id="downloadBtn1">
-              <div class="dropdown-trigger">
-                <button
-                  class="button is-fullwidth is-light is-primary"
-                  onclick="downloadButton('1')"
-                  aria-haspopup="true"
-                  aria-controls="dropdown-menu1"
-                >
-                  <span
-                    ><span class="icon is-small"
-                      ><i class="fas fa-download"></i
-                    ></span>
-                    <span>Download</span></span
-                  >
-                  <span class="icon is-small">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="dropdown-menu" id="dropdown-menu1" role="menu">
-                <div class="dropdown-content">
-                  <div class="dropdown-item">
-                    <nav class="panel">
-                      <p class="panel-heading">Items</p>
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="static\pdfs\icrax40.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
 
-                      <a class="panel-block is-active" id="step/Uni127C.STEP" onclick="downloadModel(event)">
-                        <span class="panel-icon">
-                          <i class="fas fa-book" aria-hidden="true"></i>
-                        </span>
-                        STEP
-                      </a>
-                      <a class="panel-block" id="bom/BOM_Uni127C.xlsx" onclick="downloadModel(event)">
-                        <span class="panel-icon">
-                          <i class="fas fa-book" aria-hidden="true"></i>
-                        </span>
-                        BOM
-                      </a>
-
-                    </nav>
-                  </div>
-                </div>
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/HKUST-Aerial-Robotics/UniQuad" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>GitHub</span>
+                  </a>
+                </span>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <div class="pricing-plan">
-          <div class="plan-header">UNI-250C</div>
-          <div class="plan-items">
-            <div class="plan-item" data-feature="Wheelbase">250mm</div>
-            <div class="plan-item" data-feature="weight">848g</div>
-            <div class="plan-item" data-feature="TWR">7.03</div>
-            <div class="plan-item" data-feature="Flight Time">8.5min</div>
-          </div>
-          <div class="plan-footer">
-            <button
-              id="btn2"
-              onclick="btn2Pressed()"
-              class="button is-fullwidth is-light is-info"
-            >
-              <span class="icon is-small"><i class="fas fa-cube"></i></span>
-              <span>Preview</span>
-            </button>
-          </div>
-          <div class="plan-footer">
-            <!-- <button id="btn22" onclick="downloadModel(1)" class="button is-fullwidth is-light is-info">
-            <span class="icon is-small"><i class="fas fa-download"></i></span>
-            <span>Download</span>
-          </button> -->
-            <div class="dropdown" id="downloadBtn2">
-              <div class="dropdown-trigger">
-                <button
-                  class="button is-fullwidth is-light is-info"
-                  onclick="downloadButton('2')"
-                  aria-haspopup="true"
-                  aria-controls="dropdown-menu2"
-                >
-                  <span
-                    ><span class="icon is-small"
-                      ><i class="fas fa-download"></i
-                    ></span>
-                    <span>Download</span></span
-                  >
-                  <span class="icon is-small">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="dropdown-menu" id="dropdown-menu2" role="menu">
-                <div class="dropdown-content">
-                  <div class="dropdown-item">
-                    <nav class="panel">
-                      <p class="panel-heading">Items</p>
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <img src="/UniQuad/assets/all_crop-xJDQ5Upg.png" alt="UniQuad" />
+      <h2 class="has-text-centered">
+        The quadrotor platforms in UniQuad series provided in this article,
+        namely Uni250L, Uni127C, Uni350CL and Uni250C from left to right.
+      </h2>
+      <!-- <div class="hero-body">
+      </div> -->
+    </div>
+  </section>
+  <!-- </div> -->
 
-                      <a class="panel-block is-active" id="step/Uni250C.STEP" onclick="downloadModel(event)">
-                        <span class="panel-icon">
-                          <i class="fas fa-book" aria-hidden="true"></i>
-                        </span>
-                        STEP
-                      </a>
-                      <a class="panel-block" id="bom/BOM_Uni250C.xlsx" onclick="downloadModel(event)">
-                        <span class="panel-icon">
-                          <i class="fas fa-book" aria-hidden="true"></i>
-                        </span>
-                        BOM
-                      </a>
-
-                    </nav>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              As quadrotors take on an increasingly diverse range of roles,
+              researchers often need to develop new hardware platforms
+              tailored for specific tasks, introducing significant engineering
+              overhead. In this article, we introduce the UniQuad series, a
+              unified and versatile quadrotor hardware platform series that
+              offers high flexibility to adapt to a wide range of common
+              tasks, excellent customizability for advanced demands, and easy
+              maintenance in case of crashes. This project is fully
+              open-source at
+              <a href="https://hkust-aerial-robotics.github.io/UniQuad/">
+                https://hkust-aerial-robotics.github.io/UniQuad/</a>.
+            </p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
 
-        <div class="pricing-plan">
-          <div class="plan-header">UNI-250L</div>
-          <div class="plan-items">
-            <div class="plan-item" data-feature="Wheelbase">250mm</div>
-            <div class="plan-item" data-feature="Weight">1258g</div>
-            <div class="plan-item" data-feature="TWR">5.46</div>
-            <div class="plan-item" data-feature="Flight Time">12min</div>
-          </div>
-          <div class="plan-footer">
-            <!-- <button class="button is-fullwidth">Choose</button> -->
-            <button
-              id="btn3"
-              onclick="btn3Pressed()"
-              class="button is-fullwidth is-light is-success"
-            >
-              <span class="icon is-small"><i class="fas fa-cube"></i></span>
-              <span>Preview</span>
-            </button>
-          </div>
-          <div class="plan-footer">
-            <!-- <button class="button is-fullwidth">Choose</button> -->
-            <!-- <button id="btn33" onclick="downloadModel(2)" class="button is-fullwidth is-light is-success">
-            <span class="icon is-small"><i class="fas fa-download"></i></span>
-            <span>Download</span>
-          </button> -->
-            <div class="dropdown" id="downloadBtn3">
-              <div class="dropdown-trigger">
-                <button
-                  class="button is-fullwidth is-light is-success"
-                  onclick="downloadButton('3')"
-                  aria-haspopup="true"
-                  aria-controls="dropdown-menu3"
-                >
-                  <span
-                    ><span class="icon is-small"
-                      ><i class="fas fa-download"></i
-                    ></span>
-                    <span>Download</span></span>
-                  <span class="icon is-small">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="dropdown-menu" id="dropdown-menu3" role="menu">
-                <div class="dropdown-content">
-                  <div class="dropdown-item">
-                    <nav class="panel">
-                      <p class="panel-heading">Items</p>
-
-                      <a class="panel-block is-active" id="step/Uni250L.STEP" onclick="downloadModel(event)">
-                        <span class="panel-icon">
-                          <i class="fas fa-book" aria-hidden="true"></i>
-                        </span>
-                        STEP
-                      </a>
-                      <a class="panel-block" id="bom/BOM_Uni250L.xlsx" onclick="downloadModel(event)">
-                        <span class="panel-icon">
-                          <i class="fas fa-book" aria-hidden="true"></i>
-                        </span>
-                        BOM
-                      </a>
-
-                    </nav>
-                  </div>
-                </div>
-              </div>
-            </div>
+  <section class="section hero">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Platform Overview</h2>
+          <div class="content has-text-justified">
+            <img src="/UniQuad/assets/overview-Dgv8VrYq.png" alt="UniQuad overview" />
+            <p>
+              The UniQuad series consists of four quadrotor platforms, namely
+              Uni250L, Uni127C, Uni350CL, and Uni250C. These platforms are
+              designed to cover a wide range of applications, from indoor
+              navigation to outdoor mapping. The UniQuad series is equipped
+              with various sensors, including RTK, Intel RealSense D430, D435,
+              and Livox LiDAR Mid-360, to provide accurate and reliable data
+              for different tasks.
+            </p>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="section hero">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <h2 class="title is-3">Specification of UniQuad Series</h2>
+      </div>
+      <div class="content has-text-justified">
+        <table class="table">
+          <thead>
+            <tr>
+              <th><abbr title="Model">Model</abbr></th>
+              <th><abbr title="Wheelbase">Wheelbase</abbr></th>
+              <th>
+                <abbr title="Motor">Motor<sup>*</sup></abbr>
+              </th>
+              <th><abbr title="Propeller">Propeller</abbr></th>
+              <th><abbr title="Weight">Weight</abbr></th>
+              <th><abbr title="Battery Capacity">Battery Capacity</abbr></th>
+              <th><abbr title="Equipped Sensor">Equipped Sensor</abbr></th>
+              <th>
+                <abbr title="TWR">TWR<sup>**</sup></abbr>
+              </th>
+              <th><abbr title="Flight Duration">Flight Duration</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>UNI-127C</th>
+              <td>127mm</td>
+              <td>F1404 KV3800</td>
+              <td>Gemfan 3016</td>
+              <td>468g</td>
+              <td>4S 3000mAh 30C</td>
+              <td>Intel RealSense D430</td>
+              <td>&cong;2.77</td>
+              <td>7min</td>
+            </tr>
+            <tr>
+              <th>UNI-250C</th>
+              <td>250mm</td>
+              <td>F60PRO KV2550</td>
+              <td>Gemfan 5043</td>
+              <td>848g</td>
+              <td>4S 2200mAh 45C</td>
+              <td>Intel RealSense D435</td>
+              <td>&cong;7.03</td>
+              <td>8.5min</td>
+            </tr>
+            <tr>
+              <th>UNI-250L</th>
+              <td>250mm</td>
+              <td>F60PRO KV1750</td>
+              <td>Gemfan 5043</td>
+              <td>1258g</td>
+              <td>6S 3300mAh 50C</td>
+              <td>Livox LiDAR Mid-360</td>
+              <td>&cong;5.46</td>
+              <td>12min</td>
+            </tr>
+            <tr>
+              <th>UNI-350CL</th>
+              <td>350mm</td>
+              <td>F90 KV1300</td>
+              <td>Sunnysky EOLO8</td>
+              <td>1526g</td>
+              <td>6S 3300mAh 50C</td>
+              <td>D435 & Mid-360</td>
+              <td>&cong;5.54</td>
+              <td>15.5min</td>
+            </tr>
+          </tbody>
+        </table>
+        <p style="font-size: 11px">
+          <sup>*</sup>All motors are purchased from T-MOTOR (<a href="https://store.tmotor.com/categorys/f-series-motor"
+            target="_blank">https://store.tmotor.com/categorys/f-series-motor</a>).
+        </p>
+        <p style="font-size: 11px">
+          <sup>**</sup>Thrust-to-weight ratio (TWR) is calculated using data
+          obtained from the motor test report available on the T-MOTOR
+          official website.
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3">Experiment results</h2>
+          <img src="/UniQuad/assets/experiment-CaIWKDf4.png" alt="UniQuad" />
+        </div>
+      </div>
+      <div>
+        <h2 style="font-size: 11px">
+          Experiment results of the trajectory following experiments. The
+          first row shows the composite images of the flight recordings. The
+          second row illustrates the trajectory commands in black curves and
+          the onboard state estimations in green curves. The average tracking
+          errors(m) during the experiments in (x, y, z) axes are indicated in
+          each subcaption respectively.
+        </h2>
+      </div>
+    </div>
+  </section>
 
-        <div class="pricing-plan">
-          <div class="plan-header">UNI-350CL</div>
-          <div class="plan-items">
-            <div class="plan-item" data-feature="Wheelbase">350mm</div>
-            <div class="plan-item" data-feature="Weight">1526g</div>
-            <div class="plan-item" data-feature="TWR">5.54</div>
-            <div class="plan-item" data-feature="Flight Time">15.5min</div>
-          </div>
-          <div class="plan-footer">
-            <button
-              id="btn4"
-              onclick="btn4Pressed()"
-              class="button is-fullwidth is-light is-danger"
-            >
-              <span class="icon is-small"><i class="fas fa-cube"></i></span>
-              <span>Preview</span>
-            </button>
-          </div>
-          <div class="plan-footer">
-            <!-- <button id="btn44" onclick="downloadModel(3)" class="button is-fullwidth is-light is-danger">
+  <section class="section">
+    <div class="column has-text-centered">
+      <h2 class="title is-3">UniQuad Series Models</h2>
+    </div>
+    <div class="pricing-table is-comparative">
+      <div class="pricing-plan is-features">
+        <div class="plan-header">Features</div>
+
+        <div class="plan-items">
+          <div class="plan-item">Wheelbase</div>
+          <div class="plan-item">Weight</div>
+          <div class="plan-item">TWR</div>
+          <div class="plan-item">Flight Time</div>
+        </div>
+        <div class="plan-footer">
+          <span>3D Model</span>
+        </div>
+      </div>
+
+      <div class="pricing-plan">
+        <div class="plan-header">UNI-127C</div>
+        <div class="plan-items">
+          <div class="plan-item" data-feature="Wheelbase">127mm</div>
+          <div class="plan-item" data-feature="Weight">468g</div>
+          <div class="plan-item" data-feature="TWR">2.77</div>
+          <div class="plan-item" data-feature="Flight Time">7min</div>
+        </div>
+        <div class="plan-footer">
+          <button id="btn1" onclick="btn1Pressed()" class="button is-fullwidth is-light is-primary">
+            <span class="icon is-small"><i class="fas fa-cube"></i></span>
+            <span>Preview</span>
+          </button>
+        </div>
+        <div class="plan-footer">
+          <!-- <button id="btn11" onclick="downloadModel(0)" class="button is-fullwidth is-light is-primary">
             <span class="icon is-small"><i class="fas fa-download"></i></span>
             <span>Download</span>
           </button> -->
-            <div class="dropdown" id="downloadBtn4">
-              <div class="dropdown-trigger">
-                <button
-                  class="button is-light is-danger"
-                  onclick="downloadButton('4')"
-                  aria-haspopup="true"
-                  aria-controls="dropdown-menu4"
-                >
-                  <span
-                    ><span class="icon is-small"
-                      ><i class="fas fa-download"></i
-                    ></span>
-                    <span>Download</span></span
-                  >
-                  <span class="icon is-small">
-                    <i class="fas fa-angle-down" aria-hidden="true"></i>
-                  </span>
-                </button>
-              </div>
-              <div class="dropdown-menu" id="dropdown-menu4" role="menu">
-                <div class="dropdown-content">
-                  <div class="dropdown-item">
-                    <nav class="panel">
-                      <p class="panel-heading">Items</p>
+          <div class="dropdown" id="downloadBtn1">
+            <div class="dropdown-trigger">
+              <button class="button is-fullwidth is-light is-primary" onclick="downloadButton('1')" aria-haspopup="true"
+                aria-controls="dropdown-menu1">
+                <span><span class="icon is-small"><i class="fas fa-download"></i></span>
+                  <span>Download</span></span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu1" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <nav class="panel">
+                    <p class="panel-heading">Items</p>
 
-                      <a class="panel-block is-active" id="step/Uni350CL.STEP" onclick="downloadModel(event)">
-                        <span class="panel-icon">
-                          <i class="fas fa-book" aria-hidden="true"></i>
-                        </span>
-                        STEP
-                      </a>
-                      <a class="panel-block" id="bom/BOM_Uni350CL.xlsx" onclick="downloadModel(event)">
-                        <span class="panel-icon">
-                          <i class="fas fa-book" aria-hidden="true"></i>
-                        </span>
-                        BOM
-                      </a>
+                    <a class="panel-block is-active" id="step/Uni127C.STEP" onclick="downloadModel(event)">
+                      <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                      </span>
+                      STEP
+                    </a>
+                    <a class="panel-block" id="bom/BOM_Uni127C.xlsx" onclick="downloadModel(event)">
+                      <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                      </span>
+                      BOM
+                    </a>
 
-                    </nav>
-                  </div>
+                  </nav>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <section id="uni127Container">
-      <canvas id="canvas_1"></canvas>
-    </section>
+      <div class="pricing-plan">
+        <div class="plan-header">UNI-250C</div>
+        <div class="plan-items">
+          <div class="plan-item" data-feature="Wheelbase">250mm</div>
+          <div class="plan-item" data-feature="weight">848g</div>
+          <div class="plan-item" data-feature="TWR">7.03</div>
+          <div class="plan-item" data-feature="Flight Time">8.5min</div>
+        </div>
+        <div class="plan-footer">
+          <button id="btn2" onclick="btn2Pressed()" class="button is-fullwidth is-light is-info">
+            <span class="icon is-small"><i class="fas fa-cube"></i></span>
+            <span>Preview</span>
+          </button>
+        </div>
+        <div class="plan-footer">
+          <!-- <button id="btn22" onclick="downloadModel(1)" class="button is-fullwidth is-light is-info">
+            <span class="icon is-small"><i class="fas fa-download"></i></span>
+            <span>Download</span>
+          </button> -->
+          <div class="dropdown" id="downloadBtn2">
+            <div class="dropdown-trigger">
+              <button class="button is-fullwidth is-light is-info" onclick="downloadButton('2')" aria-haspopup="true"
+                aria-controls="dropdown-menu2">
+                <span><span class="icon is-small"><i class="fas fa-download"></i></span>
+                  <span>Download</span></span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu2" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <nav class="panel">
+                    <p class="panel-heading">Items</p>
 
-    <!-- <pre> -->
-    <section class="hero is-small">
-      <div class="hero-body is-max-desktop">
-        <nav class="panel">
-          <p class="panel-heading">Other Components</p>
-          <p class="panel-tabs">
-            <a class="panel-tab is-active" onclick="openTabs(event,'all');"
-              >All</a
-            >
-            <a class="panel-tab" onclick="openTabs(event,'pcb');">PCB</a>
-       
-            <a class="panel-tab" onclick="openTabs(event,'cnc' )">CNC</a>
-           
-          </p>
-          <a class="panel-block" id="PCB/XT-30-Main-Power-Board.zip" onclick="downloadModel(event)" data-pcb data-all>
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            XT-30-Main-Power-Board
-          </a>
-          <a class="panel-block" id="PCB/XT-60-Main-Power-Board.zip" onclick="downloadModel(event)" data-pcb data-all>
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            XT-60-Main-Power-Board
-          </a>
-          <a class="panel-block" id="PCB/Nanolink-RTL8125B.zip" onclick="downloadModel(event)" data-pcb data-all>
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            Nanolink-RTL8125B
-          </a>
-          <a class="panel-block " id="PCB/HDMI-Type-A-Dummy-Plug.zip" onclick="downloadModel(event)" data-pcb data-all>
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            HDMI-Type-A-Dummy-Plug
-          </a>
-          <a class="panel-block" id="CNC/Uni127C_CNC.zip" onclick="downloadModel(event)" data-cnc data-all>
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            Uni127C_CNC.zip
-          </a>
-          <a class="panel-block" id="CNC/Uni250C_CNC.zip" onclick="downloadModel(event)" data-cnc data-all>
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            Uni250C_CNC.zip
-          </a>
-          <a class="panel-block" id="CNC/Uni250L_CNC.zip" onclick="downloadModel(event)" data-cnc data-all>
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            Uni250L_CNC.zip
-          </a>
-          <a class="panel-block" id="CNC/Uni350CL_CNC.zip" onclick="downloadModel(event)" data-cnc data-all>
-            <span class="panel-icon">
-              <i class="fas fa-book" aria-hidden="true"></i>
-            </span>
-            Uni350CL_CNC.zip
-          </a>
-        </nav>
+                    <a class="panel-block is-active" id="step/Uni250C.STEP" onclick="downloadModel(event)">
+                      <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                      </span>
+                      STEP
+                    </a>
+                    <a class="panel-block" id="bom/BOM_Uni250C.xlsx" onclick="downloadModel(event)">
+                      <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                      </span>
+                      BOM
+                    </a>
+
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </section>
+
+      <div class="pricing-plan">
+        <div class="plan-header">UNI-250L</div>
+        <div class="plan-items">
+          <div class="plan-item" data-feature="Wheelbase">250mm</div>
+          <div class="plan-item" data-feature="Weight">1258g</div>
+          <div class="plan-item" data-feature="TWR">5.46</div>
+          <div class="plan-item" data-feature="Flight Time">12min</div>
+        </div>
+        <div class="plan-footer">
+          <!-- <button class="button is-fullwidth">Choose</button> -->
+          <button id="btn3" onclick="btn3Pressed()" class="button is-fullwidth is-light is-success">
+            <span class="icon is-small"><i class="fas fa-cube"></i></span>
+            <span>Preview</span>
+          </button>
+        </div>
+        <div class="plan-footer">
+          <!-- <button class="button is-fullwidth">Choose</button> -->
+          <!-- <button id="btn33" onclick="downloadModel(2)" class="button is-fullwidth is-light is-success">
+            <span class="icon is-small"><i class="fas fa-download"></i></span>
+            <span>Download</span>
+          </button> -->
+          <div class="dropdown" id="downloadBtn3">
+            <div class="dropdown-trigger">
+              <button class="button is-fullwidth is-light is-success" onclick="downloadButton('3')" aria-haspopup="true"
+                aria-controls="dropdown-menu3">
+                <span><span class="icon is-small"><i class="fas fa-download"></i></span>
+                  <span>Download</span></span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <nav class="panel">
+                    <p class="panel-heading">Items</p>
+
+                    <a class="panel-block is-active" id="step/Uni250L.STEP" onclick="downloadModel(event)">
+                      <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                      </span>
+                      STEP
+                    </a>
+                    <a class="panel-block" id="bom/BOM_Uni250L.xlsx" onclick="downloadModel(event)">
+                      <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                      </span>
+                      BOM
+                    </a>
+
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="pricing-plan">
+        <div class="plan-header">UNI-350CL</div>
+        <div class="plan-items">
+          <div class="plan-item" data-feature="Wheelbase">350mm</div>
+          <div class="plan-item" data-feature="Weight">1526g</div>
+          <div class="plan-item" data-feature="TWR">5.54</div>
+          <div class="plan-item" data-feature="Flight Time">15.5min</div>
+        </div>
+        <div class="plan-footer">
+          <button id="btn4" onclick="btn4Pressed()" class="button is-fullwidth is-light is-danger">
+            <span class="icon is-small"><i class="fas fa-cube"></i></span>
+            <span>Preview</span>
+          </button>
+        </div>
+        <div class="plan-footer">
+          <!-- <button id="btn44" onclick="downloadModel(3)" class="button is-fullwidth is-light is-danger">
+            <span class="icon is-small"><i class="fas fa-download"></i></span>
+            <span>Download</span>
+          </button> -->
+          <div class="dropdown" id="downloadBtn4">
+            <div class="dropdown-trigger">
+              <button class="button is-light is-danger" onclick="downloadButton('4')" aria-haspopup="true"
+                aria-controls="dropdown-menu4">
+                <span><span class="icon is-small"><i class="fas fa-download"></i></span>
+                  <span>Download</span></span>
+                <span class="icon is-small">
+                  <i class="fas fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+              <div class="dropdown-content">
+                <div class="dropdown-item">
+                  <nav class="panel">
+                    <p class="panel-heading">Items</p>
+
+                    <a class="panel-block is-active" id="step/Uni350CL.STEP" onclick="downloadModel(event)">
+                      <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                      </span>
+                      STEP
+                    </a>
+                    <a class="panel-block" id="bom/BOM_Uni350CL.xlsx" onclick="downloadModel(event)">
+                      <span class="panel-icon">
+                        <i class="fas fa-book" aria-hidden="true"></i>
+                      </span>
+                      BOM
+                    </a>
+
+                  </nav>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="uni127Container">
+    <canvas id="canvas_1"></canvas>
+  </section>
+
+  <!-- <pre> -->
+  <section class="hero is-small">
+    <div class="hero-body is-max-desktop">
+      <nav class="panel">
+        <p class="panel-heading">Other Components</p>
+        <p class="panel-tabs">
+          <a class="panel-tab is-active" onclick="openTabs(event,'all');">All</a>
+          <a class="panel-tab" onclick="openTabs(event,'pcb');">PCB</a>
+
+          <a class="panel-tab" onclick="openTabs(event,'cnc' )">CNC</a>
+
+        </p>
+        <a class="panel-block" id="PCB/XT-30-Main-Power-Board.zip" onclick="downloadModel(event)" data-pcb data-all>
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          XT-30-Main-Power-Board
+        </a>
+        <a class="panel-block" id="PCB/XT-60-Main-Power-Board.zip" onclick="downloadModel(event)" data-pcb data-all>
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          XT-60-Main-Power-Board
+        </a>
+        <a class="panel-block" id="PCB/Nanolink-RTL8125B.zip" onclick="downloadModel(event)" data-pcb data-all>
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          Nanolink-RTL8125B
+        </a>
+        <a class="panel-block " id="PCB/HDMI-Type-A-Dummy-Plug.zip" onclick="downloadModel(event)" data-pcb data-all>
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          HDMI-Type-A-Dummy-Plug
+        </a>
+        <a class="panel-block" id="CNC/Uni127C_CNC.zip" onclick="downloadModel(event)" data-cnc data-all>
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          Uni127C_CNC.zip
+        </a>
+        <a class="panel-block" id="CNC/Uni250C_CNC.zip" onclick="downloadModel(event)" data-cnc data-all>
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          Uni250C_CNC.zip
+        </a>
+        <a class="panel-block" id="CNC/Uni250L_CNC.zip" onclick="downloadModel(event)" data-cnc data-all>
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          Uni250L_CNC.zip
+        </a>
+        <a class="panel-block" id="CNC/Uni350CL_CNC.zip" onclick="downloadModel(event)" data-cnc data-all>
+          <span class="panel-icon">
+            <i class="fas fa-book" aria-hidden="true"></i>
+          </span>
+          Uni350CL_CNC.zip
+        </a>
+      </nav>
+    </div>
+  </section>
   <!-- </pre> -->
-    <section class="hero teaser">
-      <div class="hero-body is-max-desktop">
-        <div class="container has-text-centered">
-          <h2 class="title is-3">Video Presentation</h2>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <div class="publication-video">
-                <video id="poster-video" controls poster muted loop autoplay>
-                  <source src="/UniQuad/assets/icrax40-BZ9uh00D.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+  <section class="hero teaser">
+    <div class="hero-body is-max-desktop">
+      <div class="container has-text-centered">
+        <h2 class="title is-3">Video Presentation</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="publication-video">
+              <video id="poster-video" controls poster muted loop autoplay>
+                <source src="/UniQuad/assets/icrax40-BZ9uh00D.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero teaser">
+    <div class="hero-body is-max-desktop">
+      <div class="container has-text-centered">
+        <h2 class="title is-3">Projects using UniQuad</h2>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <div class="projects-used-uniquad">
+              <div class="projects-used-uniquad-apace">
+                <h3 class="title is-size-5">APACE: Agile and Perception-Aware Trajectory Generation for Quadrotor
+                  Flights</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/FIM3ta6p_d0?si=QB9UtEBBfbXuQcVS"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+              <br>
+              <div class="projects-used-uniquad-falcon">
+                <h3 class="title is-size-5">FALCON: Fast Autonomous Aerial Exploration using Coverage Path Guidance</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/BGH5T2kPbWw?si=EzRj74U_P6WgaRKE"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="hero teaser">
-      <div class="hero-body is-max-desktop">
-        <div class="container has-text-centered">
-          <h2 class="title is-3">Projects using UniQuad</h2>
-          <div class="columns is-centered has-text-centered">
-            <div class="column is-four-fifths">
-              <div class="projects-used-uniquad">
-                <div class="projects-used-uniquad-apace">
-                  <h3 class="title is-size-5">APACE: Agile and Perception-Aware Trajectory Generation for Quadrotor Flights</h3>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/FIM3ta6p_d0?si=QB9UtEBBfbXuQcVS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-                <br>                
-                <div class="projects-used-uniquad-falcon">
-                  <h3 class="title is-size-5">FALCON: Fast Autonomous Aerial Exploration using Coverage Path Guidance</h3>
-                  <iframe width="560" height="315" src="https://www.youtube.com/embed/BGH5T2kPbWw?si=EzRj74U_P6WgaRKE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-              </div>
+
+  <section class="hero teaser">
+    <div class="hero-body is-max-desktop">
+      <div class="container has-text-centered">
+        <h2 class="title is-3">Acknowledgements</h2>
+        <div class="columns is-centered has-text-left">
+          <div class="column is-four-fifths">
+            <div class="acknowledgements">
+              <ol>
+                <li>
+                  Nxt-FC: Mini PX4 for UAV Group,
+                  <a href="https://github.com/HKUST-Aerial-Robotics/Nxt-FC"
+                    target="_blank">https://github.com/HKUST-Aerial-Robotics/Nxt-FC</a>
+                </li>
+                <li>
+                  ZJU Fast-Drone-250:
+                  <a href="https://github.com/ZJU-FAST-Lab/Fast-Drone-250"
+                    target="_blank">https://github.com/ZJU-FAST-Lab/Fast-Drone-250</a>
+                </li>
+              </ol>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    
-    <section class="hero teaser">
-      <div class="hero-body is-max-desktop">
-        <div class="container has-text-centered">
-          <h2 class="title is-3">Acknowledgements</h2>
-          <div class="columns is-centered has-text-left">
-            <div class="column is-four-fifths">
-              <div class="acknowledgements">
-                <ol>
-                  <li>
-                    Nxt-FC: Mini PX4 for UAV Group, 
-                    <a href="https://github.com/HKUST-Aerial-Robotics/Nxt-FC" target="_blank">https://github.com/HKUST-Aerial-Robotics/Nxt-FC</a>
-                  </li>
-                  <li>
-                    ZJU Fast-Drone-250:
-                    <a href="https://github.com/ZJU-FAST-Lab/Fast-Drone-250" target="_blank">https://github.com/ZJU-FAST-Lab/Fast-Drone-250</a>
-                  </li>
-                </ol>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--BibTex citation -->
-    <section class="section" id="BibTeX">
-      <div class="container is-max-desktop content">
-        <h2 class="title">BibTeX</h2>
-        <pre><code>@article{zhang2024uniquad,
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@article{zhang2024uniquad,
         title={UniQuad: A Unified and Versatile Quadrotor Platform Series for UAV Research and Application}, 
         author={Yichen Zhang and Xinyi Chen and Peize Liu and Junzhe Wang and Hetai Zou and Shaojie Shen},
         journal={arXiv preprint arXiv:2407.00578},
         year={2024},
       }
   </code></pre>
-      </div>
-    </section>
-    <!--End BibTex citation -->
+    </div>
+  </section>
+  <!--End BibTex citation -->
 
-    <footer class="footer">
-      <div class="container">
-        <div class="columns is-centered">
-          <div class="column is-8">
-            <div class="content">
-              <p>
-                This page was built using the
-                <a
-                  href="https://github.com/eliahuhorwitz/Academic-project-page-template"
-                  target="_blank"
-                  >Academic Project Page Template</a
-                >
-                which was adopted from the <a
-                  href="https://nerfies.github.io"
-                  target="_blank"
-                  >Nerfies</a
-                > project page. This website is licensed under a
-                <a
-                  rel="license"
-                  href="http://creativecommons.org/licenses/by-sa/4.0/"
-                  target="_blank"
-                  >Creative Commons Attribution-ShareAlike 4.0 International
-                  License</a
-                >.
-              </p>
-            </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the
+              <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project
+                Page Template</a>
+              which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              This website is licensed under a
+              <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons
+                Attribution-ShareAlike 4.0 International
+                License</a>.
+            </p>
           </div>
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
+
 </html>
