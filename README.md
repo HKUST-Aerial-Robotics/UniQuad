@@ -71,9 +71,9 @@ The example quadrotor platforms in **UniQuad** series provided in this article, 
 
 ## More Extensions
 <div align="center">
-  <img src="./img/Uni250CL_3588.JPG" style="width:33%">
-  <img src="./img/Uni250L_Avia.JPG" style="width:33%">
-  <img src="./img/Uni350CL_RTK_Gimbal.JPG" style="width:33%">
+  <img src="./img/Uni250CL_3588.JPG" style="width:32%">
+  <img src="./img/Uni250L_Avia.JPG" style="width:32%">
+  <img src="./img/Uni350CL_RTK_Gimbal.JPG" style="width:32%">
   <figcaption>Uni250CL RK3588 (LubanCat-4), Uni250L Avia, Uni350CL RTK Gimbal ...</figcaption>
 </div>
 
