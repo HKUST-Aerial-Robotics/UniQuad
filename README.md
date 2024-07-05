@@ -18,8 +18,7 @@
     </p>
     <a href='https://arxiv.org/pdf/2407.00578'><img src='https://img.shields.io/badge/arXiv-UniQuad-red' alt='arxiv'></a>
     <a href='https://hkust-aerial-robotics.github.io/UniQuad/'><img src='https://img.shields.io/badge/Project_Page-UniQuad-green' alt='Project Page'></a>
-    <!-- <a href="https://www.bilibili.com/video/BV1AK421Y7Vz/?spm_id_from=333.999.0.0&vd_source=0af61c122e5e37c944053b57e313025a"><img alt="Bilibili" src="https://img.shields.io/badge/Video-Bilibili-blue"/></a> -->
-    <!-- <a href="https://www.youtube.com/watch?v=jjPPIAAkPrk"><img alt="Youtube" src="https://img.shields.io/badge/Video-Youtube-red"/></a> -->
+    <a href="https://www.youtube.com/watch?v=I7qoN82rEIc"><img alt="Youtube" src="https://img.shields.io/badge/Video-Youtube-red"/></a>
 </div>
 
 ## Updates
