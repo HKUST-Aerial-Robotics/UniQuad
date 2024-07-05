@@ -70,6 +70,14 @@ The example quadrotor platforms in **UniQuad** series provided in this article, 
 
 1. Uni127C was inspired by the 3-inch quadrotor from <a href="https://arxiv.org/abs/2403.04586" target="_blank"> Learning Agility Adaptation for Flight in Clutter</a>, which is credit to its designer <a href="http://zju-fast.com/neng-pan/" target="_blank">Neng Pan</a>. 
 
+## More Extensions
+<div align="center">
+  <img src="./img/Uni250CL_3588.JPG" style="width:33%">
+  <img src="./img/Uni250L_Avia.JPG" style="width:33%">
+  <img src="./img/Uni350CL_RTK_Gimbal.JPG" style="width:33%">
+  <figcaption>Uni250CL RK3588 (LubanCat-4), Uni250L Avia, Uni350CL RTK Gimbal ...</figcaption>
+</div>
+
 ## Useful Links
 <div>
     <ol>
